@@ -1,13 +1,19 @@
 {
-  "name": "coinietrade-doc",
-  "version": "0.0.1",
+  "name": "coinietrade-docs",
+  "version": "0.1.0",
   "description": "Keid's CoinieTrade project - Documents.",
-  "repository": "https://github.com/keidrun/coinietrade-doc.git",
+  "repository": "https://github.com/keidrun/coinietrade-docs.git",
   "author": "Keid",
-  "license": "MIT",
+  "license": "No license",
+  "private": true,
   "scripts": {
     "start": "gitbook serve",
     "build": "gitbook build",
-    "deploy": "git subtree push --prefix _book origin gh-pages"
+    "build:debug": "gitbook build ./ --log=debug --debug",
+    "deploy": "git subtree push --prefix _book origin gh-pages",
+    "deploy:force": "git push origin `git subtree split --prefix _book master`:gh-pages --force"
+  },
+  "devDependencies": {
+    "gitbook-cli": "^2.3.2"
   }
 }

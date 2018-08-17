@@ -1,3 +1,3 @@
-# coinietrade-doc
+# coinietrade-docs
 
-Keid's CoinieTrade project - Document.
+Keid's CoinieTrade project - Documents.
