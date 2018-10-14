@@ -7,7 +7,7 @@
   "license": "No license",
   "private": true,
   "scripts": {
-    "start": "gitbook serve",
+    "dev": "gitbook serve --port 8080",
     "build": "gitbook build",
     "build:debug": "gitbook build ./ --log=debug --debug",
     "deploy": "git subtree push --prefix _book origin gh-pages",

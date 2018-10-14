@@ -1,0 +1,16 @@
+FROM node:10.11.0-alpine
+
+WORKDIR /app
+
+COPY package.json .
+COPY yarn.lock .
+RUN yarn install
+
+COPY . .
+
+RUN yarn global add gitbook-cli@2.3.2
+RUN gitbook init
+
+EXPOSE 8080
+
+CMD yarn dev
