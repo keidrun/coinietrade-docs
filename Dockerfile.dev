@@ -5,11 +5,9 @@ WORKDIR /app
 COPY package.json .
 COPY yarn.lock .
 RUN yarn install
+RUN yarn gitbook init
 
 COPY . .
-
-RUN yarn global add gitbook-cli@2.3.2
-RUN gitbook init
 
 EXPOSE 8080
 
