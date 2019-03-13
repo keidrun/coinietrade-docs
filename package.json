@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "description": "Keid's CoinieTrade project - Documents.",
   "repository": "https://github.com/keidrun/coinietrade-docs.git",
-  "author": "Keid",
-  "license": "No license",
+  "author": "keidrun",
+  "license": "GPL-3.0-only",
   "private": true,
   "scripts": {
     "dev": "gitbook serve --port 8080",
