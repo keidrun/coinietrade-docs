@@ -23,6 +23,11 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
+      - name: Workaround to fix Gitbook error
+        run: |
+          rm /home/runner/work/coinietrade-docs/coinietrade-docs/node_modules/npm/node_modules/graceful-fs/polyfills.js
+          wget -P /home/runner/work/coinietrade-docs/coinietrade-docs/node_modules/npm/node_modules/graceful-fs https://raw.githubusercontent.com/isaacs/node-graceful-fs/168bdb8f0bb3174e8499d4bc5878deead4172c39/polyfills.js
+
       - name: Build Gitbook
         run: yarn build
 
