@@ -1,6 +1,6 @@
 # coinietrade-docs
 
-[![Build Status][travis-image]][travis-url] [![Dependency Status][depstat-image]][depstat-url] [![License: MIT][license-image]][license-url]
+[![Build Status][travis-image]][travis-url] [![License: GPL-3.0][license-image]][license-url]
 
 Keid's CoinieTrade project - Documents.
 
